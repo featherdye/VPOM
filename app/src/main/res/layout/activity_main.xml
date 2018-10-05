@@ -9,65 +9,32 @@
 
     <!-- Line with Latitude and Longitude -->
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal"
-        android:paddingBottom="5dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/map"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <!--&lt;!&ndash;Latitude&ndash;&gt;-->
-        <!--<TextView-->
-        <!--android:id="@+id/lat"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_weight="0.5"-->
-        <!--android:text="Lat: "-->
-        <!--android:textColor="@color/white" />-->
-
-        <!--&lt;!&ndash;Longitude&ndash;&gt;-->
-        <!--<TextView-->
-        <!--android:id="@+id/lon"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_weight="0.5"-->
-        <!--android:text="Long: "-->
-        <!--android:textColor="@color/white" />-->
-
-    </LinearLayout>
-
 
     <!--GoogleMap fragment-->
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/startGeofence"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
+
+    </fragment>
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/startGeofence"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
-        android:background="@android:drawable/screen_background_dark_transparent"
-        android:elevation="8dp"
-        android:text="State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map" />
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:srcCompat="@drawable/ic_baseline_add_24px" />
 
 
 </android.support.constraint.ConstraintLayout>

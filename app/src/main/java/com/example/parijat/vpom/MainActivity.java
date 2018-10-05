@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 //        textLat = (TextView) findViewById(R.id.lat);
 //        textLong = (TextView) findViewById(R.id.lon);
-        state = (TextView) findViewById(R.id.startGeofence);
+//        state =  findViewById(R.id.startGeofence);
         DatabaseHandler db = new DatabaseHandler(this);
         // initialize GoogleMaps
         initGMaps();
@@ -98,8 +99,8 @@ public class MainActivity extends AppCompatActivity
         LocalBroadcastManager lbc = LocalBroadcastManager.getInstance(this);
         GoogleReceiver googleReceiver = new GoogleReceiver(this);
         lbc.registerReceiver(googleReceiver, new IntentFilter("googlegeofence"));
-        Button start = (Button) findViewById(R.id.startGeofence);
-        start.setText(mainbutton);
+        FloatingActionButton start =  findViewById(R.id.startGeofence);
+        //start.setText(mainbutton);
         start.setOnClickListener(startGeo);
         path=new ArrayList<LatLng>();
 

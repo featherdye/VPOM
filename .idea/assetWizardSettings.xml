@@ -3,63 +3,19 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
-<<<<<<< HEAD
-        <entry key="imageWizard">
-=======
         <entry key="vectorWizard">
->>>>>>> 1d604b825ed2c2a4db1a86b430a50bb5bc9df98a
           <value>
             <PersistentState>
               <option name="children">
                 <map>
-<<<<<<< HEAD
-                  <entry key="imageAssetPanel">
-                    <value>
-                      <PersistentState>
-                        <option name="children">
-                          <map>
-                            <entry key="notification">
-                              <value>
-                                <PersistentState>
-                                  <option name="children">
-                                    <map>
-                                      <entry key="clipartAsset">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_location_on_black_24dp.xml" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                    </map>
-                                  </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="outputName" value="ic_action_location" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="NOTIFICATION" />
-=======
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_outline_add_24px" />
-                            <entry key="sourceFile" value="D:\Documents\Studio Res\outline-add-24px.svg" />
->>>>>>> 1d604b825ed2c2a4db1a86b430a50bb5bc9df98a
+                            <entry key="outputName" value="ic_baseline_add_24px" />
+                            <entry key="sourceFile" value="C:\Android Resources\baseline-add-24px.svg" />
                           </map>
                         </option>
                       </PersistentState>
